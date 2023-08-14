@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Print a combination of 99 and 89
+ * main - Print a combination of numbers eg 99 and 89
  *
  * Return: Always 0 (Success)
  */
