@@ -3,21 +3,20 @@
 /**
  * print_alphabet_x10 - prints 10x
  *
- * Return: On success 1.
+ * Return: 10x of alphabets.
  */
 
 void print_alphabet_x10(void)
 {
-	char ch = 'a';
+	char ch;
 	int i;
 
 	for (i = 0; i <= 9; i++)
 	{
-		while (ch <= 'z')
+		for (ch = 97; ch <= 122; ch++)
 		{
 			_putchar(ch);
 		}
-		ch++;
 		_putchar('\n');
 	}
 }
