@@ -1,0 +1,34 @@
+Define variable n
+print string "Last digit of" + n "is" n[-1]  + conditions\n
+conditions:
+	if n[-1] > 5 then print "and  is greater than 5"
+	else if n[-1] == 0 then print "and is 0"
+	else if n[-1] <6 then print "and is less than 6 and not 0"
+
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h> /* more headers goes there */
+
+/* betty style doc for function main goes there */
+
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	printf("Last digit of %d is %d ", n, n%10);
+	if (n%10 > 5)
+	{
+		 putchar("and is greater than 5");
+	}
+	else if (n%10 == 0)
+	{
+		putchar("and is 0");
+	}
+	else if (n%10 < 6)
+	{
+		putchar("and is less than 6 and not 0");
+	}
+	return (0);
+}
