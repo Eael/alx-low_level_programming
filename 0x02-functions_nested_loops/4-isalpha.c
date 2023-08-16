@@ -4,9 +4,20 @@
  * _isalpha - checks if c is  lowercase or uppercase character
  * @c: character to check
  *
- * Return: returns 1 if lowercase
+ * Return: returns 1 if c is a letter
  */
 int _isalpha(int c)
 {
-	return ((c >= 65  && c <= 90) || (c >= 97 && c <= 122));
+	if (c >= 65  && c <= 90)
+	{
+		return (1);
+	}
+	else if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
