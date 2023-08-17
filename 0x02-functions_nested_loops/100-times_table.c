@@ -23,18 +23,26 @@ void print_times_table(int n)
 			cur_num = i * j;
 			if (j == 0)
 				_putchar(cur_num + 48);
-			else if (cur_num <= n)
+			else if (cur_num < 10 && j != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(cur_num + 48);
 			}
-			else
+			else if (cur_num >= 10 && cur_num < 100)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar((cur_num / 10) + 48);
+				_putchar((cur_num % 10) + 48);
+			}
+			else if (cur_num > 100)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((cur_num / 100) + 48);
+				_putchar(((cur_num / 10) % 10) + 48);
 				_putchar((cur_num % 10) + 48);
 			}
 		}
