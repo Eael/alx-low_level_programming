@@ -28,6 +28,7 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				_putchar(' ');
 				_putchar(cur_num + 48);
 			}
 			else if (cur_num >= 10 && cur_num < 100)
