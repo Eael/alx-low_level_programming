@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * mul - multiplies two integers int a and b
  * @a: first integer
