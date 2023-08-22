@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts2 - prints every other string
- * @str: pointer to the string 
+ * @str: pointer to the string
  *
  * Return: string
  */
