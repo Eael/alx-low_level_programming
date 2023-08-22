@@ -3,7 +3,7 @@
  * rev_string - prints a string in reversee
  * @s: pointer to the string  we want to reverse
  *
- * Return: reversed string
+ * Return: nothingg
  */
 
 void rev_string(char *s)
@@ -15,11 +15,11 @@ void rev_string(char *s)
 	{
 		i++;
 	}
-	l = i;
+	l = i - 1;
 	for (; l >= 0; l--)
 	{
-		_putchar(s[l]);
+		putchar(s[l]);
 	}
-	_putchar('\n');
+	putchar('\n');
 }
 
