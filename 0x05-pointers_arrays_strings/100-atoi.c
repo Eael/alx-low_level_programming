@@ -39,7 +39,7 @@ int _atoi(char *s)
 			{
 				break;
 			}
-			f = 0
+			d = 0;
 		}
 		a++;
 	}
