@@ -4,28 +4,21 @@
  * @s: pointer to string
  * @c: character to search
  *
- * Return: returns a pointer to the memory area s
+ * Return: returns a pointer to the character or NULL
  */
 
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
-	unsigned int i, j;
+	int i;
 
 	i = 0;
 	while (s[i] != '\0')
 	{
+		if (s[i] == c)
+		{
+			return (s + 2);
+		}
 		i++;
 	}
-	j = 0;
-	for (; j < i; j++)
-	{
-		if (s[j] == c)
-		{
-			return (s[j]);
-		}
-		else
-		{
-			return (NULL);
-		}
-	}
+	return (NULL);
 }
