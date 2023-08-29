@@ -4,14 +4,15 @@
  * @s: pointer to string we want to find initial length
  * @accept: set of characters we want to search for
  *
- * Return: returns 0L
+ * Return: returns length of string
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, k, count;
+	int i, j, count;
 
 	i = 0;
+	count = 0;
 	while (s[i] != '\0')
 	{
 		count = 0;
@@ -19,15 +20,15 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (accept[j] == s[i])
 			{
-				k++;
 				count = 1;
+				break;
 			}
 		}
 		if (count == 0)
 		{
-			return (k);
+			return (i);
 		}
 		i++;
 	}
-	return (0);
+	return (i);
 }
