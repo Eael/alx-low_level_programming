@@ -1,11 +1,12 @@
 #include "main.h"
+int is_prime_number(int n);
+
 /**
  * _sqrt_recursion - prints the natural square roots of n
  * @n: number
  *
  * Return: returns square root or 1
  */
-int actual_sqrt_recursion(int n, int i);
 
 int _sqrt_recursion(int n)
 {
