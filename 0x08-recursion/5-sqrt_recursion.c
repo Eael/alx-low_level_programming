@@ -5,6 +5,7 @@
  *
  * Return: returns square root or 1
  */
+int actual_sqrt_recursion(int n, int i);
 
 int _sqrt_recursion(int n)
 {
