@@ -1,5 +1,5 @@
 #include "main.h"
-int is_prime_number(int n);
+int actual_sqrt_recursion(int n, int i);
 
 /**
  * _sqrt_recursion - prints the natural square roots of n
