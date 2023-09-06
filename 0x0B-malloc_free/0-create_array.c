@@ -4,7 +4,7 @@
  * initializes it with a specific char.
  * @size: size of array
  * @c: character to initialize the array
- * 
+ *
  * Return: pointer to array or null
 */
 
