@@ -41,11 +41,12 @@ int main(int argc, char *argv[])
  */
 int _atoi(char *s)
 {
-	int i, n, sign;
+	int i, n, sign, valid;
 
 	i = 0;
 	n = 0;
 	sign = 1;
+	valid = 1;
 	while (s[i] == ' ')
 	{
 		i++;
@@ -55,11 +56,25 @@ int _atoi(char *s)
 		sign = -1;
 		i++;
 	}
-	while (s[i] >= '0' && s[i] <= '9')
+	while (s[i] != '\0')
 	{
-		n = n * 10 + (s[i] - '0');
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			n = n * 10 + (s[i] - '0');
+		}
+		else
+		{
+			valid = 0;
+			return (0);
+		}
 		i++;
 	}
-	return (sign * n);
+	if (valid)
+	{
+		return (sign * n);
+	}
+	else
+	{
+		return (0);
+	}
 }
-
