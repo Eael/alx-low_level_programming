@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * *_strdup -  returns a pointer to a new string which is a duplicate of the 
- * string str. Memory for the new string is obtained with malloc, and can be 
+ * *_strdup -  returns a pointer to a new string which is a duplicate of the
+ * string str. Memory for the new string is obtained with malloc, and can be
  * freed with free.
  * @str: string to duplicate
  *
- * Return: pointer to new string which is a duplicate 
+ * Return: pointer to new string which is a duplicate
 */
 
 char *_strdup(char *str)
@@ -29,7 +29,7 @@ char *_strdup(char *str)
 	}
 	for (j = 0; j < i; j++)
 	{
-			dup[j] = str[j];
+		dup[j] = str[j];
 	}
 	dup[j] = '\0';
 
