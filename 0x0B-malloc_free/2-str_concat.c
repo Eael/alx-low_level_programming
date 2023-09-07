@@ -1,48 +1,41 @@
 #include "main.h"
 /**
  * *str_concat - concatenates two strings
- * @s1: string to concatenate
- * @s2: other string to concatenate
- *
- * Return: pointer to the new string created (Success), or NULL (Error)
- */
-
+ * @s1: first string
+ * @s2: second string
+ * 
+ * Return: pointer to newly allocated space or NULL if failed
+*/
 char *str_concat(char *s1, char *s2)
 {
-	char *s3;
-	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
+	int i = 0, j = 0, len, k;
+	char *temp;
 
-	while (s1 && s1[len1])
-		len1++;
-	while (s2 && s2[len2])
-		len2++;
-
-	s3 = malloc(sizeof(char) * (len1 + len2 + 1));
-	if (s3 == NULL)
+	if (s1 == NULL && s2 == NULL)
+	{
 		return (NULL);
-
-	i = 0;
-	j = 0;
-
-	if (s1)
-	{
-		while (i < len1)
-		{
-			s3[i] = s1[i];
-			i++;
-		}
 	}
-
-	if (s2)
+	while (s2[i] != '\0')
 	{
-		while (i < (len1 + len2))
-		{
-			s3[i] = s2[j];
-			i++;
-			j++;
-		}
+		i++;
 	}
-	s3[i] = '\0';
-
-	return (s3);
+	while (s1[j] != '\0')
+	{
+		j++;
+	}
+	len = i + j;
+	temp = malloc(sizeof(char) * (len + 1));
+	if (temp == NULL)
+	{
+		return (NULL);
+	}
+	for (k = 0; k < j; k++)
+	{
+		temp[k] = s1[k];
+	}
+	for (i = 0; i <= len; i++)
+	{
+		temp[k + i] = s2[i];
+	}
+	return (temp);
 }
