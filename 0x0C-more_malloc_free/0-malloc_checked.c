@@ -2,7 +2,7 @@
 /**
  * *malloc_checked - allocates memory using malloc
  * @b: size of bytes
- * 
+ *
  * Return: pointer to 2 dimensional array
 */
 
