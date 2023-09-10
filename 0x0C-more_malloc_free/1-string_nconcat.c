@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * string_nconcat - concatenates two strings
- * @s1: first string 
+ * @s1: first string
  * @s2: second string to concatenate n bytes
  * @n: number of bytes of s2 to copy
  *
@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			len2++;
 		}
 	}
-	if ( n < len2)
+	if (n < len2)
 	{
 		n = len2;
 	}
