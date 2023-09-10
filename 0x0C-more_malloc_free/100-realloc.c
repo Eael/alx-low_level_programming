@@ -3,7 +3,7 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 
 /**
  * _realloc -  allocates a new size to an old pointer
- * @*ptr: the pointer
+ * @ptr: the pointer
  * @old_size: old size
  * @new_size: new size of pointer
  *
