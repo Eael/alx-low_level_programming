@@ -4,8 +4,8 @@
  *
  * Return: name of file and new line
 */
-int main()
+int main(void)
 {
-	printf("%s\n", __FILE__ );
+	printf("%s\n", __FILE__);
 	return (0);
 }
