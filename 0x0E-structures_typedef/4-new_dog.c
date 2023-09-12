@@ -25,7 +25,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(create_dog->name);
 		free(create_dog->owner);
 		free(create_dog);
-		return NULL;
+		return (NULL);
 	}
 	(*create_dog).age = age;
 
