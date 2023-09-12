@@ -1,6 +1,6 @@
 #include "dog.h"
 /**
- * free_dog -
+ * free_dog - a function that frees dog mallocs
  * @d: pointer to dog
  *
  * Return: nothing
