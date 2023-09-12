@@ -2,7 +2,7 @@
 /**
  * free_dog -
  * @d: pointer to dog
- * 
+ *
  * Return: nothing
 */
 
