@@ -2,13 +2,13 @@
 
 /**
  * print_list - prints all the elements of a list_t
- * @h: pointer to a struct list_h
+ * @h: name of list
  *
- * Return: always 0
+ * Return:elements of the list
  */
 size_t print_list(const list_t *h)
 {
-	size_t i = 0;
+	int i = 0;
 
 	while (h)
 	{
