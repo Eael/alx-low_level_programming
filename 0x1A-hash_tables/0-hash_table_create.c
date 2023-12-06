@@ -7,10 +7,10 @@
  * Return: pointer to newly created hash table
  */
 /*
-1. Allocate memory for the hash table.
-2. Allocate memory for the array of pointers to the nodes.
-3. Initialize the array of pointers to the nodes.
-4. Return the pointer to the hash table.
+*1. Allocate memory for the hash table.
+*2. Allocate memory for the array of pointers to the nodes.
+*3. Initialize the array of pointers to the nodes.
+*4. Return the pointer to the hash table.
 */
 hash_table_t *hash_table_create(unsigned long int size)
 {
@@ -29,8 +29,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 	}
 	for (i = 0; i < size; i++)
-	{
 		hash_table->array[i] = NULL;
-	}
+
 	return (hash_table);
 }
