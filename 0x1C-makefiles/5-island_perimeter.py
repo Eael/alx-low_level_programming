@@ -3,6 +3,7 @@
     function to calculate perimeter of a grid
 """
 
+
 def island_perimeter(grid):
     """ Return the perimeter of the island.
     The grid represents water by 0 and land by 1
